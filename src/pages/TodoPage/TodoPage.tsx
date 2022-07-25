@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from "@hooks";
 import { SortOptionsEnum } from "@store/todo/types";
@@ -37,6 +37,11 @@ export const TodoPage: FC = () => {
   const handleCreateNewBtnClick = () => {
     navigate(AppRoutesEnum.AddTodo);
   };
+
+  useEffect(() => {
+    dispatch(setSortTodos(SortOptionsEnum.Oldest));
+    dispatch(setSearchQuery(""));
+  }, []);
 
   const todoItems = filteredTodos.map(
     ({ title, text, createdAt, isCompleted }) => (
