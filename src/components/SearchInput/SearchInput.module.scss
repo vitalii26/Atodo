@@ -1,0 +1,13 @@
+@import '@styles/variables';
+
+.searchPanel {
+    display: flex;
+}
+
+.searchPanel__input {
+    color: $black;
+    border: $borderOrange;
+    padding: 8px;
+    outline: none;
+    font-size: 1.2rem;
+}

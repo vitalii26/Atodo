@@ -1,0 +1,43 @@
+@import '@styles/variables';
+
+.addPage {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.addPage__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.addPage__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 40px;
+    border: $borderOrange;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: $boxShadowGrey;
+}
+
+.addPage_label {
+    margin-bottom: 10px;
+    font-style: italic;
+    align-self: start;
+}
+
+.addPage__input {
+    border: $borderOrange;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 1.2rem;
+    width: 100%;
+}

@@ -1,0 +1,67 @@
+@import '@styles/variables';
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 4px 4px $grey;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.item__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    border: $borderOrange;   
+}
+
+.item__title {
+    font-size: 1.5rem;
+}
+
+.item__text {
+    font-size: 1.2rem;
+}
+
+.item__button {
+    cursor: pointer;
+
+    &:hover {
+        stroke: $orange;
+    }
+}
+
+.item__description {
+    padding: 8px;
+    border: $borderOrange;
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: $black;
+}
+
+.item__date {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 0.8rem;
+    color: $grey;
+}
+
+.item__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 40px;
+}
+
+.crossedOut {
+    text-decoration: line-through;
+}
